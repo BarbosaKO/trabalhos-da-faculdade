@@ -1,0 +1,107 @@
+#include <direct.h> // BIBLIOTECA DA MICROSOFT
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+#include <time.h>
+
+void _CriaDiretorio(char *dir){
+    // _mkdir("\\diretorio");   RETORNAM ZERO SE OBTER SUCESSO CASO CONTRARIO -1
+    // _rmdir("\\diretorio");
+    if( _mkdir( "\\testtmp" ) == 0 )
+        printf( "Directory '\\testtmp' was successfully created\n" );
+    else
+        printf( "Problem creating directory '\\testtmp'\n" );
+}
+
+void _InsereTexto(){}
+
+void _ListarDir(){}
+
+void _Apagar(){} //APAGA OS ARQUIVOS EM UM DIRETORIO OU OS DADOS EM UM ARQUIVO
+
+void _Renomear(){}
+
+void _Mover(){}
+
+void _Deletar(){} //DELETA O DIRETORIO OU ARQUIVO
+
+void _Ajuda(){}
+
+void _Version(){}
+
+void _Data(){}
+
+void _hora(){}
+
+void _Limpar(){
+    system("CLS");
+}
+
+void _Sair(){
+    system("CLS");
+    printf("Desligando");
+    system("CLS");
+    printf("Desligando.");
+    system("CLS");
+    printf("Desligando..");
+    system("CLS");
+    printf("Desligando...");
+    system("CLS");
+    printf("Desligado");
+    exit(1);
+}
+
+//************** Outras rotinas **************
+
+void _SeparaText(char *text,int len, char *comand, char *p1, char *p2){
+    int i,k,j;
+    for(i=0,k=0,j=0; i<len; i++, j++){
+        if(k == 0 && text[i] != ' '){
+            comand[j] = text[i];
+        }
+        else if(k == 1 && text[i] != ' '){
+            p1[j] = text[i];
+        }
+        else if(k == 2 && text[i] != ' '){
+            p2[j] = text[i];
+        }
+        else if(text[i] == ' '){
+            j = 0;
+            k++;
+        }
+    }
+}
+
+void main()
+{
+    char text[255],comand[255],p1[255],p2[255];
+    int len;
+
+    label:
+    printf("============ GLM OS - 1.00 ============\n");
+    while(1){
+        fflush(stdin);
+        scanf("%s",text);
+        len = strlen(text);
+
+        _SeparaText(text,len,comand,p1,p2);
+
+        if(strcmp(comand,"CRIAR") == 0){
+            printf("Criar Pasta!!\n");
+        }
+        else if(strcmp(comand,"LIMPAR") == 0){
+            _Limpar();
+            goto label;
+        }
+        else if(strcmp(comand,"SAIR") == 0){
+            _Sair();
+        }
+        else{
+            printf("COMANDO INVALIDO!!\n");
+        }
+        text[0] = '\0';
+        comand[0] = '\0';
+    }
+    return 0;
+}

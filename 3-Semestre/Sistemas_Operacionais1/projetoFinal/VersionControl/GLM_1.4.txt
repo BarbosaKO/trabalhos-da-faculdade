@@ -1,0 +1,193 @@
+#include <direct.h> // BIBLIOTECA DA MICROSOFT
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+#include <windows.h>
+#include <VersionHelpers.h>	//NÃO CONSIGO RODAR PQ NÃO TENHO WINDOWS 1O -MARCEL
+#include <time.h>
+
+void _CriaDiretorio(char *dir){
+    // _mkdir("\\diretorio");   RETORNAM ZERO SE OBTER SUCESSO CASO CONTRARIO -1
+    // _rmdir("\\diretorio");
+    if( _mkdir( "\\testtmp" ) == 0 )
+        printf( "Directory '\\testtmp' was successfully created\n" );
+    else
+        printf( "Problem creating directory '\\testtmp'\n" );
+}
+
+void _Limpar(){
+    system("CLS");
+    printf("============= GLM OS - 1.00 =============\n");		//Toda vez que der CLS usa essa função pra voltar com o nome do programa no topo -Marcel
+}
+
+void _InsereTexto(){}
+
+void _ListarDir(){}
+
+void _Apagar(){} //APAGA OS ARQUIVOS EM UM DIRETORIO OU OS DADOS EM UM ARQUIVO
+
+void _Renomear(){}
+
+void _Mover(){}
+
+void _Deletar(){} //DELETA O DIRETORIO OU ARQUIVO  || Modesto tinha dito pro Lara que apagar é pra diretório e deletar pra arquivo -Marcel
+
+void _Ajuda()
+{
+	_Limpar();
+	printf("\n\n\n|==============================================================================|\n");
+	printf("|COMANDOS   |DESCRIÇÃO                                                         |\n");
+	printf("|==============================================================================|\n");
+	printf("|CRIAR		|CRIA UM ARQUIVO OU DIRETÓRIO                                  |\n");
+	printf("|INSERIR	|INSERE UM TEXTO EM UM ARQUIVO                                 |\n");
+	printf("|LISTAR		|LISTA ARQUIVOS E DIRETÓRIOS DA PASTA                          |\n");
+	printf("|APAGAR		|APAGA UM DIRETORIO                                            |\n");
+	printf("|RENOMEAR	|RENOMEIA UM ARQUIVO OU DIRETORIO                              |\n");
+	printf("|MOVER		|MOVE UM ARQUIVO OU DIRETÓRIO                                  |\n");
+	printf("|DELETAR	|DELETA UM DIRETÓRIO                                           |\n");
+	printf("|AJUDA		|LISTA TODOS OS COMANDOS DESTA TABELA JUNTAMENTE COM DESCRIÇÕES|\n");
+	printf("|VER		|IMPRIME A VERSÃO DO SISTEMA OPERACIONAL                       |\n");
+	printf("|DATA		|IMPRIME A DATA DO SISTEMA OPERACIONAL                         |\n");
+	printf("|HORA		|IMPRIME A HORA DO SISTEMA OPERACIONAL                         |\n");
+	printf("|LIMPAR		|LIMPA O CONTEÚDO ATUAL DA TELA                                |\n");
+	printf("|SAIR		|FINALIZA O PROGRAMA                                           |\n");
+}
+
+void _Version()
+{
+	   	 if	(!IsWindows10OrGreater())		printf("Seu sistema é Windows 10\n");			//Vai verificar qual a versão com a biblioteca VersionHelpers -Marcel
+	else if(!IsWindows8Point1OrGreater())	printf("Seu sistema é Windows 8.1\n");
+	else if(!IsWindows8OrGreater())			printf("Seu sistema é Windows 8\n");
+	else if(!IsWindows7SP1OrGreater())		printf("Seu sistema é Windows 7 SP 1\n");
+	else if(!IsWindows7OrGreater())			printf("Seu sistema é Windows 7\n");
+	else if(!IsWindowsVistaSP2OrGreater())	printf("Seu sistema é Windows Vista SP 2\n");
+	else if(!IsWindowsVistaSP1OrGreater())	printf("Seu sistema é Windows Vista SP 1\n");
+	else if(!IsWindowsVistaOrGreater())		printf("Seu sistema é Windows Vista\n");
+	else if(!IsWindowsXPSP3OrGreater())		printf("Seu sistema é Windows XP SP 3\n");
+	else if(!IsWindowsXPSP2OrGreater())		printf("Seu sistema é Windows XP SP 2\n");
+	else if(!IsWindowsXPSP1OrGreater())		printf("Seu sistema é Windows XP SP 1\n");
+	else if(!IsWindowsXPOrGreater())		printf("Seu sistema é Windows XP\n");
+
+}
+
+void _Data(){}
+
+void _hora(){}
+
+
+void _Sair(){
+    system("CLS");
+    printf("Desligando");
+    for(int i=0; i<3; i++)
+    {
+      	Sleep(250);
+    	printf(".");
+    	Sleep(250);
+	}
+    system("CLS");
+    printf("Desligado");
+    exit(1);
+}
+
+//************** Outras rotinas **************
+void _ApagaStrings(char *text,int len, char *comand, char *p1, char *p2){
+    int i,LenCmd = strlen(comand);
+    for(i=0;i<=len;i++)
+        text[i]=' ';
+    for(i=0;i<=LenCmd;i++)
+        text[i]=' ';
+}
+
+void _SeparaText(char *text,int len, char *comand, char *p1, char *p2){
+    int i,j,k;
+    for(i=0,j=0,k=0; i<len; i++,j++){
+        if(k==0 && text[i] != ' '){
+            comand[j] = text[i];
+        }
+        else if(k==1 && text[i] != ' '){
+            p1[j] = text[i];
+        }
+        else if(k==2 && text[i] != ' '){
+            p2[j] = text[i];
+        }
+        else{
+            k += 1;
+            j = 0;
+        }
+    }
+}
+
+int main()
+{
+    char text[255],comand[255],p1[255],p2[255];
+    int len;
+    setlocale(LC_ALL, "");
+
+    printf("\n  .g8\"\"\"bgd  `7MMF'      `7MMM.     ,MMF\'                .g8\"\"8q.    .M\"\"\"bgd \n.dP\'     `M    MM          MMMb    dPMM                .dP\'    `YM. ,MI    \"Y \ndM\'       `    MM          M YM   ,M MM                dM\'      `MM `MMb.     \nMM             MM          M  Mb  M\' MM                MM        MM   `YMMNq. \nMM.    `7MMF\'  MM      ,   M  YM.P\'  MM      mmmmm     MM.      ,MP .     `MM \n`Mb.     MM    MM     ,M   M  `YM\'   MM                `Mb.    ,dP\' Mb     dM \n  `\"bmmmdPY  .JMMmmmmMMM .JML. `\'  .JMML.                `\"bmmd\"\'   P\"Ybmmd\"\n           ");
+    printf("\nCarregando");
+    for(int i=0; i<5; i++)
+    {
+      	Sleep(250);
+    	printf(".");
+    	Sleep(250);
+	}
+    system("CLS");
+
+    printf("============= GLM OS - 1.00 =============\n");
+    while(1){
+        fflush(stdin);
+        printf(">>>");
+        gets(comand);
+        len = strlen(text);
+
+        //_SeparaText(text,len,comand,p1,p2);			//Por enquanto ta funcionando sem ter q chamar essa função -Marcel
+        //printf("%sTESTE\n", comand);
+
+        if(strcmp(comand,"CRIAR") == 0){
+        	printf("Criar Pasta!\n");
+        }
+        else if(strcmp(comand,"INSERIR") == 0){
+            printf("Inserir Pasta!\n");
+        }
+        else if(strcmp(comand,"LISTAR") == 0){
+            printf("Listar diretorio!\n");
+        }
+        else if(strcmp(comand,"APAGAR") == 0){
+            printf("Apagar!\n");
+        }
+        else if(strcmp(comand,"RENOMEAR") == 0){
+            printf("Renomear Pasta!\n");
+        }
+        else if(strcmp(comand,"MOVER") == 0){
+            printf("Mover Pasta!\n");
+        }
+        else if(strcmp(comand,"DELETAR") == 0){
+            printf("Deletar Pasta!\n");
+        }
+        else if(strcmp(comand,"AJUDA") == 0){
+            _Ajuda();
+        }
+        else if(strcmp(comand,"VER") == 0){
+            _Version();
+        }
+        else if(strcmp(comand,"DATA") == 0){
+            printf("Mostra data!\n");
+        }
+        else if(strcmp(comand,"HORA") == 0){
+            printf("Mostra hora!\n");
+        }
+        else if(strcmp(comand,"LIMPAR") == 0){
+            _Limpar();
+        }
+        else if(strcmp(comand,"SAIR") == 0){
+            _Sair();
+        }
+        else{
+            printf("COMANDO INVALIDO!!\n");
+        }
+        text[0] = '\0';
+        comand[0] = '\0';
+    }
+    return 0;
+}
