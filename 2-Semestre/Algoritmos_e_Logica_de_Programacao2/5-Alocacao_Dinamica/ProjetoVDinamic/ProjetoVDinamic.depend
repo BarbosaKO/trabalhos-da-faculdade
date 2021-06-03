@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1604373480 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\algoritmos em c\alocacao_dinamica\projetovdinamic\main.c
+	<stdio.h>
+	<stdlib.h>
+	"MCRF.h"
+
+1604373553 c:\users\gahba\onedrive\Área de trabalho\faculdade\algoritmos em c\alocacao_dinamica\projetovdinamic\mcrf.h
+

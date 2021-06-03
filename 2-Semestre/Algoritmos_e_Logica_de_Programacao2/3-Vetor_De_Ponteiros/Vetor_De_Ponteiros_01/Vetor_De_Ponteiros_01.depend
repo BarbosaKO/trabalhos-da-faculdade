@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1605020201 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\algoritmos em c\vetor_de_ponteiros\vetor_de_ponteiros_01\main.c
+	<stdio.h>
+	<stdlib.h>
+	"func.h"
+
+1605020582 c:\users\gahba\onedrive\Área de trabalho\faculdade\algoritmos em c\vetor_de_ponteiros\vetor_de_ponteiros_01\func.h
+
+1605020608 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\algoritmos em c\vetor_de_ponteiros\vetor_de_ponteiros_01\func.c
+	<stdio.h>
+	<stdlib.h>
+

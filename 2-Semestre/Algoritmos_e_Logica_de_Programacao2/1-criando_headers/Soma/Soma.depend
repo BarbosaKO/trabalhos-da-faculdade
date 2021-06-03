@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1605021288 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\algoritmos em c\alocacao_dinamica\soma\main.c
+	<stdio.h>
+	<stdlib.h>
+	"soma.h"
+
+1605021526 c:\users\gahba\onedrive\Área de trabalho\faculdade\algoritmos em c\alocacao_dinamica\soma\soma.h
+
+1605022039 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\algoritmos em c\criando_headers\soma\soma.c
+	<stdio.h>
+	<stdlib.h>
+
