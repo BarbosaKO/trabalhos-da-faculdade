@@ -1,0 +1,237 @@
+# depslib dependency file v1.0
+1604340824 source:c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\deque.c
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"deque.h"
+
+1604340924 c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\deque.h
+	<stdbool.h>
+	<stdio.h>
+
+1604777592 source:c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\grafo.c
+	"grafo.h"
+	<assert.h>
+
+1604446056 c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\grafo.h
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+	"deque.h"
+
+1604777412 source:c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"testaDeque.h"
+	"testaGrafo.h"
+	"Estudante.h"
+
+1604339289 c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\testadeque.h
+	<stdlib.h>
+	<stdio.h>
+
+1604777412 c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\testagrafo.h
+	"grafo.h"
+
+1604783186 source:c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\percurso.c
+	"percurso.h"
+
+1604451170 c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\percurso.h
+	"grafo.h"
+
+1604340924 source:c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\testadeque.c
+	"testaDeque.h"
+	"deque.h"
+
+1604780043 source:c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\testagrafo.c
+	"testaGrafo.h"
+	"percurso.h"
+
+1604450669 source:c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\estudante.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"deque.h"
+	"Estudante.h"
+
+1604449462 c:\users\lhsac\onedrive - ifsp.edu.br\sacchi\academico\ifsp\disciplinas\tegc4\projetos-c\listas de exercÍcios\percursografos-aluno\estudante.h
+	<stdbool.h>
+	<stdio.h>
+
+1604853543 source:c:\users\lhsac\desktop\percursografos-aluno\deque.c
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"deque.h"
+
+1604918706 c:\users\lhsac\desktop\percursografos-aluno\deque.h
+	<stdbool.h>
+	<stdio.h>
+
+1604853351 source:c:\users\lhsac\desktop\percursografos-aluno\estudante.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"deque.h"
+	"Estudante.h"
+
+1604449462 c:\users\lhsac\desktop\percursografos-aluno\estudante.h
+	<stdbool.h>
+	<stdio.h>
+
+1604784325 source:c:\users\lhsac\desktop\percursografos-aluno\grafo.c
+	"grafo.h"
+	<assert.h>
+
+1604784325 c:\users\lhsac\desktop\percursografos-aluno\grafo.h
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+	"deque.h"
+
+1604853351 source:c:\users\lhsac\desktop\percursografos-aluno\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"testaDeque.h"
+	"testaGrafo.h"
+	"Estudante.h"
+
+1604339289 c:\users\lhsac\desktop\percursografos-aluno\testadeque.h
+	<stdlib.h>
+	<stdio.h>
+
+1604777412 c:\users\lhsac\desktop\percursografos-aluno\testagrafo.h
+	"grafo.h"
+
+1604853351 source:c:\users\lhsac\desktop\percursografos-aluno\percurso.c
+	"percurso.h"
+
+1604451170 c:\users\lhsac\desktop\percursografos-aluno\percurso.h
+	"grafo.h"
+
+1604853351 source:c:\users\lhsac\desktop\percursografos-aluno\testadeque.c
+	"testaDeque.h"
+	"deque.h"
+
+1604853351 source:c:\users\lhsac\desktop\percursografos-aluno\testagrafo.c
+	"testaGrafo.h"
+	"percurso.h"
+
+1606695239 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\deque.c
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"deque.h"
+
+1604918706 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\deque.h
+	<stdbool.h>
+	<stdio.h>
+
+1604784325 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\grafo.c
+	"grafo.h"
+	<assert.h>
+
+1604784325 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\grafo.h
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+	"deque.h"
+
+1604853351 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\percurso.c
+	"percurso.h"
+
+1604451170 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\percurso.h
+	"grafo.h"
+
+1606696085 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\testadeque.c
+	"testaDeque.h"
+	"deque.h"
+
+1604339289 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\testadeque.h
+	<stdlib.h>
+	<stdio.h>
+
+1606688131 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\testagrafo.c
+	"testaGrafo.h"
+	"percurso.h"
+
+1604777412 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\testagrafo.h
+	"grafo.h"
+
+1606666430 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\estudante.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"deque.h"
+	"Estudante.h"
+
+1604449462 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\estudante.h
+	<stdbool.h>
+	<stdio.h>
+
+1606701525 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\percursografos-aluno\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"testaDeque.h"
+	"testaGrafo.h"
+	"Estudante.h"
+
+1606695239 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\deque.c
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"deque.h"
+
+1604918706 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\deque.h
+	<stdbool.h>
+	<stdio.h>
+
+1604784325 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\grafo.c
+	"grafo.h"
+	<assert.h>
+
+1604784325 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\grafo.h
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+	"deque.h"
+
+1606701525 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"testaDeque.h"
+	"testaGrafo.h"
+	"Estudante.h"
+
+1604339289 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\testadeque.h
+	<stdlib.h>
+	<stdio.h>
+
+1604777412 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\testagrafo.h
+	"grafo.h"
+
+1604449462 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\estudante.h
+	<stdbool.h>
+	<stdio.h>
+
+1604853351 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\percurso.c
+	"percurso.h"
+
+1604451170 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\percurso.h
+	"grafo.h"
+
+1606696085 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\testadeque.c
+	"testaDeque.h"
+	"deque.h"
+
+1606688131 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\teg\listas\lista1\grafoslista1-barbosa-lara-fernandes\percursografos-aluno\testagrafo.c
+	"testaGrafo.h"
+	"percurso.h"
+

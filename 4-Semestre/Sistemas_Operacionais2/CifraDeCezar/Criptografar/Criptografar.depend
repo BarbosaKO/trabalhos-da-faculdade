@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1608564678 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\so2\atividades\entregues\cifradecezar_1.1\criptografar\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+	"cripto.h"
+
+1608564857 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\so2\atividades\entregues\cifradecezar_1.1\criptografar\cripto.h
+
+1608636222 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\so2\atividades\entregues\cifradecezar-gabriel_barbosa\criptografar\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+	"cripto.h"
+
+1608636607 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\so2\atividades\entregues\cifradecezar-gabriel_barbosa\criptografar\cripto.h
+

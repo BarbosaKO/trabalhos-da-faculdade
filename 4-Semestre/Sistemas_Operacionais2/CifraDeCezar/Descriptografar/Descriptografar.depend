@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1608559941 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\so2\atividades\entregues\cifradecezar_1.1\descriptografar\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+	"descripto.h"
+
+1608572947 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\so2\atividades\entregues\cifradecezar_1.1\descriptografar\descripto.h
+
+1608573364 source:c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\so2\atividades\entregues\cifradecezar-gabriel_barbosa\descriptografar\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+	"descripto.h"
+
+1608636742 c:\users\gahba\onedrive\Área de trabalho\faculdade\4ºsemestre\so2\atividades\entregues\cifradecezar-gabriel_barbosa\descriptografar\descripto.h
+
